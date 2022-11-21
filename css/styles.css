@@ -193,6 +193,7 @@ main{
 .flex-services{
     display: flex;
     justify-content: space-between;
+    padding-bottom: 2rem;
 }
 .card-service{
     margin-top: 1rem;
@@ -228,4 +229,70 @@ main{
     background-color: white;
     border: 2px solid #152921;
     cursor: pointer;
+}
+
+/* ------------ ESTILOS FOOTER ----------- */
+footer{
+    /* Padding bottom en flex-services */
+    background-color: #152921;
+    /* Color blanco a texto en todo el footer */
+    color: white;
+    font: normal 15px 'Josefin Sans';
+}
+.footer-flex{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.contact, .newslater{
+    padding: 1.5rem 0;
+}
+.social-media{
+    padding: 1.5rem 0;
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(45, 199, 137);
+}
+.social-media-icons{
+    display: flex;
+    justify-content: center;
+}
+.social-media-icons i{
+    margin-right: 5rem;
+    transition: .2s ease;
+    font-size: 1.5rem;
+}
+.social-media-icons i:last-child{margin-right: 0;}
+.social-media-icons i:hover{
+    cursor: pointer;
+    color: rgb(192, 192, 192);
+}
+.contact-info{
+    padding-top: 1rem;
+}
+.contact-info div{
+    padding-top: .5rem;
+}
+.contact-info div:first-child{
+    padding-top: 0;
+}
+.contact-info i{
+    padding-right: .5rem;
+}
+.newslater input{
+    margin-top: 1rem;
+    padding: .3rem;
+    width: 80%;
+    border: none;
+}
+.newslater button{
+    border: none;
+    padding: .3rem;
+    background-color: rgb(45, 199, 137);
+    transition: .2s ease;
+}
+.newslater button i{color: white;}
+.newslater button:hover{
+    cursor: pointer;
+    background-color: rgb(27, 121, 83);
 }
