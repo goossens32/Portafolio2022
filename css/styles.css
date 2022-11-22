@@ -154,6 +154,10 @@ main{
     border: 1px solid rgba(0, 0, 0, 0.068);
     transition: .3s;
     background-color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    min-height: 8rem;
 }
 .grid-projects a:hover{
     border: 1px solid rgba(0, 0, 0, 0.068);
@@ -175,7 +179,7 @@ main{
 .page-logo img{
     display: flex;
     align-items: center;
-    width: 60%;
+    width: 80%;
 }
 .page-description{
     flex-basis: 50%;
@@ -207,6 +211,9 @@ main{
     font:700 18px 'Josefin Sans';
     text-align: center;
     color: #152921;
+}
+.service-text{
+    height: 8rem;
 }
 .service-text p{
     padding: 1rem;
@@ -244,7 +251,7 @@ footer{
     justify-content: space-evenly;
     align-items: flex-start;
 }
-.contact, .newslater{
+.contact, .newsletter{
     padding: 1.5rem 0;
 }
 .social-media{
@@ -279,20 +286,21 @@ footer{
 .contact-info i{
     padding-right: .5rem;
 }
-.newslater input{
+.newsletter input{
     margin-top: 1rem;
     padding: .3rem;
     width: 80%;
     border: none;
 }
-.newslater button{
+.newsletter button{
     border: none;
-    padding: .3rem;
+    /* Por alguna razón a .3rem queda un poquito por encima de input */
+    padding: .29rem;
     background-color: rgb(45, 199, 137);
     transition: .2s ease;
 }
-.newslater button i{color: white;}
-.newslater button:hover{
+.newsletter button i{color: white;}
+.newsletter button:hover{
     cursor: pointer;
     background-color: rgb(27, 121, 83);
 }
