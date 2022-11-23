@@ -117,7 +117,6 @@ main{
     text-align: justify;
 }
 
-
 /* ---------------- ESTILOS EXPERT-IN ---------------- */
 .expert-in{
     margin-top: 2rem;
@@ -132,8 +131,16 @@ main{
 .expert-flex i{
     font-size: 3rem;
     color: #1529219f;
+    transition: .2s ease;
 }
-
+.expert-flex i:hover{
+    transform: scale(1.1);
+}
+.fa-html5:hover{color: #f1481c;}
+.fa-js:hover{color: #f7e018;}
+.fa-css3-alt:hover{color: #2071f2;}
+.fa-php:hover{color: #7175aa;}
+.fa-wordpress:hover{color: #1f6f93;}
 
 /*------------------ ESTILOS GRID + FLEX PROJECTS ----------------- */
 .projects{
