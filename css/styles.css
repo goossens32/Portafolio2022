@@ -480,6 +480,9 @@ footer{
     .page-logo{
         flex-basis: 40%;
     }
+    .page-logo img{
+        width: 60%;
+    }
     /* ESTILOS MEDIA-QUERIES SERVICES */
     .services-title{
         /* Tenía 80% en css normal porque se encuentra fuera del div de flex que tiene 80% */
@@ -496,6 +499,13 @@ footer{
     }
     .service-text{
         height: 5rem;
+    }
+    .service-button button{
+        transition: none;
+    }
+    .service-button button:hover{
+        color: white;
+        background-color: #152921;
     }
     /* ESTILOS MEDIA-QUERIES TABLET SOCIAL-MEDIA + FOOTER */
     .social-media i{
