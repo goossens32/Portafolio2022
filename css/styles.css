@@ -364,9 +364,10 @@ footer{
         border: 1px solid rgba(0, 0, 0, 0.068);
     }
     .grid-projects a:hover{
-        border: 1px solid rgba(0, 0, 0, 0.068);;
-        box-shadow: none;
+        border: 1px solid rgba(0, 0, 0, 0.068);
         transform: none;
+        box-shadow: none;
+        border-radius: 0px;
     }
     .page-logo{
         flex-basis: 40%;
@@ -384,6 +385,9 @@ footer{
     }
     .card-service{
         width: 100%;
+    }
+    .service-text{
+        height: 7rem;
     }
     .service-button button{
         transition: none;
@@ -409,7 +413,8 @@ footer{
     }
 }
 /* -------------- TABLET -------------- */
-@media (max-width:780px){
+/* Resolución entre 481px y 1024px */
+@media (min-width:481px) and (max-width:1024px){
     *{transition: .3s;}
      /* HEADER */
     header{
@@ -461,5 +466,47 @@ footer{
     }
     .expert-flex i{transition: none;}
     .expert-flex i:hover{transform: none;}
+    /* ESTILOS MEDIA-QUERIES TABLET GRID + PROJECTS */
+    .grid-projects{
+        display: flex;
+        flex-direction: column;
+    }
+    .grid-projects a:hover{
+        border: 1px solid rgba(0, 0, 0, 0.068);
+        transform: none;
+        box-shadow: none;
+        border-radius: 0px;
+    }
+    .page-logo{
+        flex-basis: 40%;
+    }
+    /* ESTILOS MEDIA-QUERIES SERVICES */
+    .services-title{
+        /* Tenía 80% en css normal porque se encuentra fuera del div de flex que tiene 80% */
+        width: 95%;
+    }
+    .flex-services{
+        flex-direction: column;
+        width: 95%;
+    }
+    .card-service{
+        /* 70% en relación a 95% de flex-services */
+        width: 70%;
+        margin: 1rem auto;
+    }
+    .service-text{
+        height: 5rem;
+    }
+    /* ESTILOS MEDIA-QUERIES TABLET SOCIAL-MEDIA + FOOTER */
+    .social-media i{
+        transition: none;
+    }
+    .social-media i:hover{
+        color: white;
+    }
+    .contact, .newsletter{
+        width: 95%;
+        padding: 1.5rem 1rem;
+    }
 }
 
